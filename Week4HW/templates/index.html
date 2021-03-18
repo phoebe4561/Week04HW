@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入頁面</title>
+    <meta name="roboots" content="index,follow" />
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+
+</head>
+<body>
+    <header>
+        <h1>歡迎光臨，請輸入帳號密碼</h1>
+    </header>
+    
+    <section>
+        <h3>登入系統</h3>
+        <form action="/signin" method="POST">
+            <label for="account">帳號</label>
+            <input id="account" type="text" name="username" /> 
+            <br/>
+            <label for="password">密碼</label>
+            <input id="password" type="password" name="password" />
+            <br/>
+            <button>登入</button>
+        </form>
+    </section>
+    
+
+     
+
+    
+</body>
+</html>
